@@ -39,17 +39,28 @@
 ### 실행 방법 (How to Run)
 이 프로젝트의 분석 결과를 직접 확인하고 싶으신 분은 아래의 절차를 따라주세요.
 
-1.  **프로젝트 다운로드:** 이 GitHub 저장소 페이지 오른쪽 위의 초록색 `<> Code` 버튼을 누르고, `Download ZIP`을 클릭하여 프로젝트 전체를 다운로드한 후 압축을 풉니다.
+1.  **사전 준비:**
+    - 이 GitHub 저장소에서 프로젝트 전체를 다운로드(`Download ZIP`)한 후 압축을 풉니다.
+    - 압축을 푼 폴더 안에 **`data`** 라는 이름의 새 폴더를 만듭니다.
+    - 아래 Google Drive 링크에서 두 개의 데이터 파일을 다운로드하여, 방금 만든 **`data`** 폴더 안에 넣습니다.
+        - [shinsegae_sales_ledger_Full.csv 다운로드](https://drive.google.com/uc?export=download&id=1NRnm4wUN9uLBB6Ip5N8dYe1oGSpi4eis)
+        - [shinsegae_bank_statement_For_ML.csv 다운로드](https://drive.google.com/uc?export=download&id=1WmuKtBbl8r-JOKrclcs2IuUQpVXNEYiB)
 
-2.  **폴더 생성:** 다운로드한 프로젝트 폴더 내에, **`data`** 라는 이름의 새 폴더를 만듭니다.
+2.  **터미널(CMD) 열기:**
+    - 다운로드한 프로젝트 폴더(`CPA-Fraud-Detection-Portfolio-main`)를 엽니다.
+    - 폴더 상단의 **주소 표시줄**을 클릭한 뒤, 내용을 모두 지우고 **`cmd`** 라고 입력한 후 `Enter` 키를 누릅니다. (마치 순간이동처럼, 현재 위치에서 바로 명령 창이 열립니다.)
 
-3.  **데이터 다운로드:** 아래 두 개의 Google Drive 링크에서 대용량 데이터 파일을 다운로드한 후, 방금 만든 **`data`** 폴더 안에 넣어주세요.
-    - [shinsegae_sales_ledger_Full.csv 다운로드](https://drive.google.com/uc?export=download&id=1NRnm4wUN9uLBB6Ip5N8dYe1oGSpi4eis)
-    - [shinsegae_bank_statement_For_ML.csv 다운로드](https://drive.google.com/uc?export=download&id=1WmuKtBbl8r-JOKrclcs2IuUQpVXNEYiB)
-
-4.  **라이브러리 설치:** 터미널(CMD) 창을 열고, 아래 명령어를 입력하여 분석에 필요한 라이브러리를 설치합니다.
+3.  **라이브러리 설치:**
+    - 방금 열린 검은색 명령 창(터미널)에 아래 명령어를 그대로 입력하고 `Enter` 키를 누릅니다.
     ```
     pip install pandas scikit-learn
     ```
 
-5.  **분석 코드 실행:** `02_fraud_detection.py` 파일을 실행 후, 에디터 오른쪽 상단에 있는 **초록색 재생(▶️) 버튼**을 누르면,  '인간 감사인' 모델과 'AI 탐정 팀' 모델의 성능을 비교하는 최종 결과표가 출력됩니다. (`01_data_creation.py`는 데이터 생성 과정을 보여주는 코드로, 별도로 실행하실 필요는 없습니다.)
+4.  **분석 코드 실행:**
+    - 라이브러리 설치가 완료되면, 이어서 아래 명령어를 그대로 입력하고 `Enter` 키를 누릅니다.
+    ```
+    python 02_fraud_detection.py
+    ```
+    - 잠시 후, '인간 감사인' 모델과 'AI 탐정 팀' 모델의 성능을 비교하는 최종 결과표가 바로 그 창에 출력됩니다.
+
+    *(`01_data_creation.py`는 데이터 생성 과정을 보여주는 코드로, 별도로 실행하실 필요는 없습니다.)*
