@@ -1,5 +1,19 @@
 # AI 기반 가공 매출 탐지 모델 개발 포트폴리오
 
+English Summary for Global Readers
+
+Project: AI-Driven Fraud Detection Model for Audit
+
+Goal: To overcome the limitations of traditional rule-based auditing by developing an intelligent fraud detection model using machine learning (Stacking Ensemble).
+
+Key Innovation: Designed realistic fraud scenarios based on accounting knowledge, such as "N:M Periodic Settlement" and "Third-party Kickback Routing," going beyond simple 1:1 matching patterns.
+
+Results: The AI model achieved a Recall of 70.72%, significantly outperforming the traditional rule-based approach (24.12%) by +46.6%p under the same validation conditions.
+
+Tech Stack: Python, Pandas (Data Preprocessing), Scikit-learn (ML Modeling).
+
+
+
 ## 1. 프로젝트 개요
 - 목표: 전통적 감사 절차의 한계를 넘어, AI가 스스로 데이터 속에서 비정상 패턴을 학습하여 부정 거래를 예측하는 지능형 감사 모델을 개발하고 그 효용성을 입증합니다.
 - 핵심 역량: 회계 지식에 기반한 부정위험 식별 능력과 Python을 활용한 데이터 분석 및 '디지털 감사(Digital Audit)' 역량을 증명합니다.
